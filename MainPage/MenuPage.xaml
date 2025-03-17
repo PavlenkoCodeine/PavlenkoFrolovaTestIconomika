@@ -1,0 +1,42 @@
+﻿<Page x:Class="PavlenkoFrolovaTestIconomika.MainPage.MenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PavlenkoFrolovaTestIconomika.MainPage"
+      mc:Ignorable="d" 
+       Height="500" Width="950"
+      Title="MenuPage">
+    <Grid Margin=" 0 50 0 30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="55" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="55" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="55" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="55" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="55" />
+        </Grid.RowDefinitions>
+        <Button Content="Добавить студента" 
+                FontSize="25" Width="450" Name="AddStBtn"
+                Click="AddStBtn_Click"  FontWeight="DemiBold"/>
+        <Button Content="Добавить группу" Grid.Row="2"
+                FontWeight="DemiBold"
+                FontSize="25" Width="450" Name="AddGroupBtn"
+                Click="AddGroupBtn_Click"/>
+        <Button Content="Список студентов с оценками"
+                Grid.Row="4"
+                FontSize="25" Width="450" FontWeight="DemiBold" 
+                Name="MarkBtn"
+                Click="MarkBtn_Click"/>
+        <Button Content="Удалить студента" Grid.Row="6"
+                FontWeight="DemiBold"
+                FontSize="25" Width="450" Name="DeleteBtn"
+                Click="DeleteBtn_Click"/>
+        <Button Content="Выйти в главное меню" FontWeight="DemiBold" Grid.Row="8"
+                FontSize="25" Width="450" Name="OutBtn"
+                Click="OutBtn_Click"/>
+    </Grid>
+</Page>
