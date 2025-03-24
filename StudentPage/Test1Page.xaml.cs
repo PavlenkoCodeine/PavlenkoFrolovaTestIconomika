@@ -105,7 +105,7 @@ namespace PavlenkoFrolovaTestIconomika.StudentPage
 
         private void p7_Click(object sender, RoutedEventArgs e)
         {
-            if (TextBox5.Text == "4")
+            if (TextBox4.Text == "1")
             {
                 MessageBox.Show("Правильно");
                 b = b + 1;
